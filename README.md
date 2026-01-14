@@ -21,7 +21,7 @@ cd role-play-demo
 
 ```bash
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
 ```
 
 ### Step 3: Install Dependencies
