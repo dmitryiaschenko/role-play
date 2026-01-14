@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role-Play Demo</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Role-Play Demo</h1>
+            <p class="subtitle">Real-time voice conversations with AI characters</p>
+        </header>
+
+        <main>
+            <section class="character-select">
+                <label for="character">Choose a character:</label>
+                <select id="character">
+                    {% for char in characters %}
+                    <option value="{{ char.id }}">{{ char.name }} - {{ char.description }}</option>
+                    {% endfor %}
+                </select>
+            </section>
+
+            <section class="character-info" id="characterInfo">
+                <div class="character-avatar" id="characterAvatar"></div>
+                <div class="character-details">
+                    <h2 id="characterName">Select a character</h2>
+                    <p id="characterDescription">Choose a character to start the conversation</p>
+                </div>
+            </section>
+
+            <section class="conversation">
+                <div class="status-indicator" id="statusIndicator">
+                    <div class="status-dot"></div>
+                    <span id="statusText">Ready</span>
+                </div>
+
+                <div class="transcript-area" id="transcriptArea">
+                    <div class="message system">
+                        Click "Start Conversation" to begin speaking with the AI character.
+                    </div>
+                </div>
+
+                <div class="current-speech" id="currentSpeech"></div>
+            </section>
+
+            <section class="controls">
+                <button id="startBtn" class="btn btn-primary">Start Conversation</button>
+                <button id="stopBtn" class="btn btn-danger" disabled>Stop</button>
+            </section>
+
+            <section class="text-fallback">
+                <input type="text" id="textInput" placeholder="Or type a message..." disabled>
+                <button id="sendTextBtn" class="btn btn-secondary" disabled>Send</button>
+            </section>
+        </main>
+    </div>
+
+    <audio id="audioPlayer" style="display: none;"></audio>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
