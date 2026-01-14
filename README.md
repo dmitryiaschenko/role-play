@@ -1,30 +1,3 @@
-# Role-Play Demo - AI Sales Training Simulator
-
-A real-time voice conversation application for practicing value-based selling techniques. Talk to an AI buyer who responds naturally, then receive coaching feedback on your sales pitch.
-
-## Features
-
-- **Real-time Voice Conversations** - Speak naturally with Chrome's Web Speech API
-- **AI-Powered Buyer** - Realistic buyer persona powered by Google Gemini
-- **Text-to-Speech Responses** - AI speaks back using Google Cloud TTS
-- **Coaching Assessment** - Get detailed feedback on your sales pitch when you finish
-- **Sales Training Scenario** - Practice uncovering pain points and quantifying value
-
-## Demo Scenario
-
-You play a **salesperson** trying to sell to an **Operations Manager** at a B2B cleaning services company. The buyer currently uses metal paper clips and has hidden pain points you need to uncover through good questioning:
-
-| Hidden Pain Point | Cost Impact |
-|-------------------|-------------|
-| Rusty clips (50% of time) | $5,000/month |
-| Spoiled paper replacement | $10,000/month |
-| Broken shredders | $100,000/year |
-| Employee injury lawsuit | $500,000 last year |
-
-Your goal: Ask the right questions to uncover these issues and quantify the value of your solution!
-
----
-
 ## Prerequisites
 
 Before you begin, you'll need:
